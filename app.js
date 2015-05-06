@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + '/public'));
-app.use(express.bodyParser());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 var contatos = [
 	{nome: "Bruno", telefone: "9999-2222", data: new Date(), operadora: {nome: "Oi", codigo: 14, categoria: "Celular"}},
