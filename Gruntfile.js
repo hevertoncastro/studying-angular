@@ -1,5 +1,5 @@
 module.exports = function( grunt ) {
- 
+
   grunt.initConfig({
 
     // Tasks que o Grunt deve executar
@@ -8,7 +8,7 @@ module.exports = function( grunt ) {
         livereload: true
       },
       target: {
-        files: 'lista-telefonica/*.html'
+        files: ['lista-telefonica/*.html', 'lista-telefonica/js/services/contatosAPIService.js']
       }
     }
   });
