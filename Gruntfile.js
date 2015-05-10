@@ -8,7 +8,11 @@ module.exports = function( grunt ) {
         livereload: true
       },
       target: {
-        files: ['lista-telefonica/*.html', 'lista-telefonica/js/services/contatosAPIService.js']
+        files: [
+          'lista-telefonica/*.html',
+          'lista-telefonica/js/*',
+          'lista-telefonica/css/*'
+          ]
       }
     }
   });
