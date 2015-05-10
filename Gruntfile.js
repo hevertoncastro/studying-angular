@@ -9,9 +9,7 @@ module.exports = function( grunt ) {
       },
       target: {
         files: [
-          'lista-telefonica/*.html',
-          'lista-telefonica/js/*',
-          'lista-telefonica/css/*'
+          '**/*'
           ]
       }
     }
